@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IPL Teams</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <input type="text" id="team-search" placeholder="Search Teams">
+        <button id="search-button">Search</button>
+        <button id="add-team">Add New Team</button>
+        <button id="add-player">Add New Player</button>
+    </div>
+
+    <div id="content" class="content">
+        <!-- Teams will be displayed here -->
+    </div>
+    <div id="team-dialog" class="dialog hidden">
+        <form id="team-form">
+            <label for="team_name">Team Name:</label>
+            <input type="text" id="team_name" required>
+            <label for="team_icon_link">Team Icon Link:</label>
+            <input type="text" id="team_icon_link" required>
+            <button type="submit">Add Team</button>
+        </form>
+    </div>
+    <div id="player-dialog" class="dialog hidden">
+        <form id="player-form">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" required>
+            <label for="photo_link">Photo Link:</label>
+            <input type="text" id="photo_link" required>
+            <label for="team">Team:</label>
+            <input type="text" id="team" required>
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+            <label>Playing Status:</label>
+            <label for="playing_status_playing">Playing</label>
+            <input type="radio" id="playing_status_playing" name="playing_status" value="Playing" required>
+            <label for="playing_status_on_bench">On-bench</label>
+            <input type="radio" id="playing_status_on_bench" name="playing_status" value="On-bench" required>
+            <label>Role:</label>
+            <label for="role_batsman">Batsman</label>
+            <input type="radio" id="role_batsman" name="role" value="Batsman" required>
+            <label for="role_bowler">Bowler</label>
+            <input type="radio" id="role_bowler" name="role" value="Bowler" required>
+            <label for="role_all_rounder">All-rounder</label>
+            <input type="radio" id="role_all_rounder" name="role" value="All-rounder" required>
+            <button type="submit">Add Player</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
